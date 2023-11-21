@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Practice set 2</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+ <div class="hero">
+    <div class="form-box">
+        <div class="button-box">
+            <div id="btn"></div>
+            <button type="button" class="toggle-btn" onclick="login()">Log In</button>
+            <button type="button" class="toggle-btn" onclick="register()">Register</button>
+           
+            
+
+        </div>
+        <div class="social-icon">
+            <img src="fb.png">
+            <img src="ins.png">
+            <img src="tw.png">
+        </div>
+        <form id="login" class="input-group">
+            <input type="number" class="input-field" placeholder="Mobile No." required>
+            <input type="password" class="input-field" placeholder="Password" required>
+            <input type="checkbox" class="check-box"><span>I agree to the term & condition</span>
+            
+            <butoon type="Sumbit" class="sumbit-btn" align="center">Login</butoon>
+        </form> 
+        <form id="Register" class="input-group">
+            <input type="number" class="input-field" placeholder="Mobile No." required>
+            <input type="email" class="input-field" placeholder="Email ID" required>
+            <input type="password" class="input-field" placeholder="Password" required>
+            <input type="checkbox" class="check-box"><span>Remember password</span>
+            <butoon type="Sumbit" class="sumbit-btn" align="center">Login</butoon>
+        </form> 
+    </div>
+    
+</div>
+ <script>
+var x=document.getElementById("login")
+var y=document.getElementById("Register")
+var z=document.getElementById("btn")
+
+function register(){
+    x.style.left = "-400px"
+    y.style.left = "50px"
+
+    z.style.left = "110px"
+}
+function login(){
+    x.style.left = "50px"
+    y.style.left = "450px"
+
+    z.style.left = "0"
+}
+
+
+ </script>
+</body>
+</html>
